@@ -16,11 +16,6 @@
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.8"/>
     </linearGradient>
-
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
 
   <style>
@@ -51,19 +46,19 @@
   <!-- Background -->
   <rect width="1200" height="340" fill="url(#bgGrad)" rx="16"/>
 
-  <!-- Dynamic Animated Background Elements (Background layer) -->
+  <!-- Dynamic Animated Background Elements -->
   <g opacity="0.25">
     <circle cx="150" cy="80" r="180" fill="#38bdf8" class="bg-pulse"/>
     <circle cx="1050" cy="260" r="200" fill="#c084fc" class="bg-pulse"/>
   </g>
 
-  <!-- Animated Delivery Network / Route Lines (Background Layer) -->
+  <!-- Animated Delivery Network / Route Lines -->
   <g stroke="url(#accentLine)" stroke-width="2" fill="none" opacity="0.4">
     <path d="M 100 280 Q 300 120 600 280 T 1100 100" class="route-line" />
     <path d="M 50 100 Q 400 320 800 100 T 1150 250" class="route-line" />
   </g>
 
-  <!-- Floating Dynamic Tech Pills (Positioned around, not overlapping central text) -->
+  <!-- Floating Dynamic Tech Pills (Positioned around central text) -->
   <g class="float-card1" opacity="0.85">
     <!-- Top Right Pill -->
     <rect x="920" y="45" width="220" height="42" rx="21" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
@@ -75,25 +70,25 @@
     <!-- Bottom Left Pill -->
     <rect x="60" y="245" width="240" height="42" rx="21" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
     <circle cx="85" cy="266" r="8" fill="#6366f1"/>
-    <text x="102" y="271" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#f8fafc">📦 Real-Time Tracking</text>
+    <text x="102" y="271" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Real-Time Tracking</text>
   </g>
 
   <g class="float-card1" opacity="0.85">
     <!-- Bottom Right Pill -->
     <rect x="900" y="245" width="240" height="42" rx="21" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
     <circle cx="925" cy="266" r="8" fill="#f43f5e"/>
-    <text x="942" y="271" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#f8fafc">⚡ Proactive Alerts & EDD</text>
+    <text x="942" y="271" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Proactive Alerts &amp; EDD</text>
   </g>
 
-  <!-- Main Foreground Content (Clear & High Contrast) -->
-  <!-- Icon & Badge -->
+  <!-- Main Foreground Content -->
+  <!-- Badge -->
   <g transform="translate(60, 45)">
     <rect width="180" height="32" rx="16" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
     <text x="90" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#a5b4fc" text-anchor="middle">AWESOME ECOSYSTEM</text>
   </g>
 
   <!-- Title -->
-  <text x="60" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="url(#titleGrad)" filter="url(#glow)" letter-spacing="-1">
+  <text x="60" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="url(#titleGrad)" letter-spacing="-1">
     Awesome Delivery Experience Platform
   </text>
 
@@ -102,10 +97,10 @@
     Curated SaaS Products, Post-Purchase Tracking &amp; Open-Source Delivery Engines
   </text>
 
-  <!-- Feature Pills in Foreground -->
+  <!-- Feature Text in Foreground -->
   <g transform="translate(60, 195)">
     <text x="0" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#cbd5e1">
-      🚚 Post-Purchase Tracking &nbsp;•&nbsp; 🔔 WISMO Prevention &nbsp;•&nbsp; 🔄 Returns Management &nbsp;•&nbsp; 📍 Driver Apps &nbsp;•&nbsp; 📈 Market Insights
+      Post-Purchase Tracking  •  WISMO Prevention  •  Returns Management  •  Driver Apps  •  Market Insights
     </text>
   </g>
 </svg>
